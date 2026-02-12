@@ -1,9 +1,9 @@
 
-type AuthFormProps= {
+export type AuthFormProps= {
     email: string;
     password: string
 }
-type CardDataProps = {
+export type CardDataProps = {
     Id: number;
     AppUserId: string;
     FirstName: string;
@@ -18,7 +18,7 @@ type CardDataProps = {
     QualificationName:string
 }
 
-enum QualificationTypes {
+export enum QualificationTypes {
     BachelorDegree,
     Diploma,
     AdvancedDiploma,
@@ -26,3 +26,4 @@ enum QualificationTypes {
     MastersDegree,
     PhD
 }
+
