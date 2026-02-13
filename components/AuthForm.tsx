@@ -12,25 +12,17 @@ const AuthForm = () => {
         setForm(prev=>({...prev,[name]:value}))
     }
     const [isLoginAction, setIsLoginAction] = useState(true);
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+    }
   return (
-      <div>
+    <section>
           <div>
-              <label htmlFor="email">Email</label>
-              <input type="text" id='email' name="email" onChange={handleChage} />
-          </div>
-          <div>
-              <label htmlFor="password">Password</label>
-              <input type="text" id='password' name="password" onChange={handleChage} />
-          </div>
-          <div>
-            <button>{isLoginAction ? "Login" : "Create Account"}</button>
-            <div>
-            <button>Login with Google</button>
-              </div> 
-            <span>Not Registered? Create Profile Here.</span>
-          </div>
-      
-    </div>
+              <h1>Hire Me</h1>
+              //Icon
+          </div>      
+    </section>
   )
 }
 
