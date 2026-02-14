@@ -20,7 +20,7 @@ const AuthForm = () => {
     <section>
           <div>
               <h1>Hire Me</h1>
-              //Icon
+              //Icon will go here 
           </div>      
     </section>
   )
